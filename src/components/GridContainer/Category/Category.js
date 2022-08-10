@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Gif from "../Gif/Gif";
 
-const Category = ({ gifList, categoryName }) => {
+const Category = ({ categoryName, gifList }) => {
     return (
         <div className="category">
             <h1>{categoryName}</h1>
