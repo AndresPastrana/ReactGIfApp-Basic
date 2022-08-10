@@ -4,9 +4,10 @@ import PropTypes from 'prop-types'
 import "./addCategory.style.css";
 
 // Helper Functions
-import { isValid } from "../../helper/formFunctions";
+import { isValid, getGifs } from './addCategory.helpers'
 
 const AddCategory = ({ setCategories }) => {
+
     // Hooks
     const [inputValue, setInputValue] = useState("");
 
@@ -17,13 +18,22 @@ const AddCategory = ({ setCategories }) => {
     };
 
     const submitHandler = (e) => {
+        console.log("Desdeon Submit !!!!!");
         e.preventDefault();
         const valid = isValid(inputValue);
 
         // If the input value is valid
         if (valid) {
-            //    We start looking for the new gif category
+
+            // We start looking for the new gif category
             // API Call
+            console.log(inputValue);
+            getGifs(inputValue)
+                .then((data) => {
+                    setCategories((oldCategories) => {
+                        return [[inputValue, data], ...oldCategories]
+                    })
+                });
         } else {
             console.log("Invalid Value");
         }

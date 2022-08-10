@@ -2,13 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import Gif from "../Gif/Gif";
 
+
+
+import './category.style.css'
 const Category = ({ categoryName, gifList }) => {
     return (
         <div className="category">
             <h1>{categoryName}</h1>
-            <ul>
+            <ul className="flex_container">
                 {gifList.map((gifData) => (
-                    <Gif gifData={gifData} />
+                    <Gif key={gifData.id} gifData={gifData} />
                 ))}
             </ul>
         </div>

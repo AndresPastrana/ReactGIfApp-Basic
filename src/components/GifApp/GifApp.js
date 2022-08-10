@@ -4,8 +4,6 @@ import React, { useState } from 'react'
 import { AddCategory } from '../AddCategory/AddCategory'
 import { GridContainer } from '../GridContainer'
 
-// Fake db
-import { arr } from '../../db'
 
 
 
@@ -13,7 +11,7 @@ import { arr } from '../../db'
 import './gifApp.style.css'
 
 const GifApp = () => {
-    const [categories, setCategories] = useState(arr);
+    const [categories, setCategories] = useState([]);
 
     return (
         <>
@@ -21,8 +19,6 @@ const GifApp = () => {
             <AddCategory setCategories={setCategories} />
 
             {/* Si existe alguna categoria renderizo el grid container */}
-
-
             {categories.length > 0 && <GridContainer categories={categories} />}
         </>
     )

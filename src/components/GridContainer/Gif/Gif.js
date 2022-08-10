@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 import './gif.style.css'
 
 const Gif = ({ gifData }) => {
-    return <div>Gif</div>;
+    const { title, img } = gifData;
+    return <div className="gif_container">
+        <p>{title}</p>
+        <img src={img}></img>
+    </div>;
 };
 
 // PropTypes
