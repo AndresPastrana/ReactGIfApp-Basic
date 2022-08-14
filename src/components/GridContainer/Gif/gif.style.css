@@ -1,3 +1,8 @@
 .gif_container {
   margin: 1rem;
+  border-radius: 2px;
+  align-content: center;
+  text-align: center;
+  border: 1px solid grey;
+  overflow: hidden;
 }

@@ -1,7 +1,6 @@
 .flex_container {
   padding: 0;
   display: flex;
-  justify-content: start;
   flex-direction: row;
   flex-wrap: wrap;
 }
