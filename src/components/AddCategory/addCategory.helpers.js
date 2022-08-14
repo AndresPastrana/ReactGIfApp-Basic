@@ -8,11 +8,10 @@ export const getGifs = async (q) => {
         return {
             id: gif.id,
             title: gif.title,
-            img: gif.images?.downsized_small.url
+            img: gif.images.downsized_medium.url
         }
     })
 
-    console.log(gifList);
     return gifList;
 }
 

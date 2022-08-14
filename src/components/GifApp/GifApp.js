@@ -19,7 +19,7 @@ const GifApp = () => {
             <AddCategory setCategories={setCategories} />
 
             {/* Si existe alguna categoria renderizo el grid container */}
-            {categories.length > 0 && <GridContainer categories={categories} />}
+            {categories.length > 0 ? <GridContainer categories={categories} /> : <div>There is no gif on the list yet</div>}
         </>
     )
 }

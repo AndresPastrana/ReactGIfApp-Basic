@@ -6,7 +6,7 @@ const Gif = ({ gifData }) => {
     const { title, img } = gifData;
     return <div className="gif_container">
         <p>{title}</p>
-        <img src={img}></img>
+        <img src={img} alt={title}></img>
     </div>;
 };
 

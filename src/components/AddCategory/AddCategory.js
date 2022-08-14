@@ -7,7 +7,7 @@ import "./addCategory.style.css";
 import { isValid, getGifs } from './addCategory.helpers'
 
 const AddCategory = ({ setCategories }) => {
-
+    { console.log('render add category') }
     // Hooks
     const [inputValue, setInputValue] = useState("");
 
