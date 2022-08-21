@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import LayoutEffect from "./components/05-useLayotEffect/LayoutEffect";
+import Memorize from "./components/06-useMemo/Memorize";
+// import LayoutEffect from "./components/05-useLayotEffect/LayoutEffect";
 // import CasoDeUsoUseRef from "./components/04-useRef/CasoDeUsoUseRef";
 // import App from './App'
 // import CounterApp from './components/01-useState/CounterApp';
@@ -13,4 +14,4 @@ import "./index.css";
 const divRoot = document.querySelector("#app");
 
 // ReactDOM.render( <PrimeraApp saludo="Hola, Soy Goku" />  , divRoot );
-ReactDOM.render(<LayoutEffect />, divRoot);
+ReactDOM.render(<Memorize />, divRoot);
