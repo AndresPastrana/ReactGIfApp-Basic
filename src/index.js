@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import MemoHook from "./components/06-useMemo/MemoHook";
+import CallBackHook from "./components/06-useMemo/CallBackHook";
+// import MemoHook from "./components/06-useMemo/MemoHook";
 // import LayoutEffect from "./components/05-useLayotEffect/LayoutEffect";
 // import CasoDeUsoUseRef from "./components/04-useRef/CasoDeUsoUseRef";
 // import App from './App'
@@ -14,4 +15,4 @@ import "./index.css";
 const divRoot = document.querySelector("#app");
 
 // ReactDOM.render( <PrimeraApp saludo="Hola, Soy Goku" />  , divRoot );
-ReactDOM.render(<MemoHook />, divRoot);
+ReactDOM.render(<CallBackHook />, divRoot);
