@@ -6,3 +6,12 @@ body {
   margin: 0;
   padding: 20px;
 }
+.btn {
+  margin: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(58, 120, 227);
+  border-radius: 5px;
+}
