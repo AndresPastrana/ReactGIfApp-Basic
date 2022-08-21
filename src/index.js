@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import CallBackHook from "./components/06-useMemo/CallBackHook";
+
+import { Padre } from "./components/07-tarea-memo/Padre";
+// import CallBackHook from "./components/06-useMemo/CallBackHook";
 // import MemoHook from "./components/06-useMemo/MemoHook";
 // import LayoutEffect from "./components/05-useLayotEffect/LayoutEffect";
 // import CasoDeUsoUseRef from "./components/04-useRef/CasoDeUsoUseRef";
@@ -15,4 +17,4 @@ import "./index.css";
 const divRoot = document.querySelector("#app");
 
 // ReactDOM.render( <PrimeraApp saludo="Hola, Soy Goku" />  , divRoot );
-ReactDOM.render(<CallBackHook />, divRoot);
+ReactDOM.render(<Padre />, divRoot);
